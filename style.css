@@ -1,0 +1,27 @@
+/* Reseteo de la página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/*Variables*/
+:root {
+    --main-bgcolormain: #FFEFDA;
+    --main-fontcolor1:#1d1d1d;
+    --main-fontcolor2:#00AADA;
+    --var-fontfamily: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--main-bgcolormain);
+    height: 100vh;
+    width:100%;
+    font-family: var(--var-fontfamily);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
