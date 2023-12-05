@@ -25,3 +25,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+.logotipo {
+    display: auto;
+    margin: auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    margin-top:5vh;
+    color: #000;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 12vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    
+}
+
+span{
+    color: #00AADA;
+}
