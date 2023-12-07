@@ -2,6 +2,8 @@ let emojiOnFeliz = document.getElementById("feliz");
 let emojiOnTriste = document.getElementById("triste");
 let emojiOnEnfadado = document.getElementById("enfadado");
 let emojiOnMiedoso = document.getElementById("miedoso");
+let iconsStop = document.getElementsByClassName("iconStop");
+
 
 let soundFeliz = document.getElementById("soundFeliz");
 let soundTriste = document.getElementById("soundTriste");
@@ -16,16 +18,16 @@ let showReproduccionMiedoso = document.getElementById("iconMusicOnMiedoso");
 function stopAllSounds() {
     soundFeliz.pause();
     soundFeliz.currentTime = 0;
+    showReproduccionFeliz.style.display = "none";
     soundTriste.pause();
     soundTriste.currentTime = 0;
+    showReproduccionTriste.style.display = "none";
     soundEnfadado.pause();
     soundEnfadado.currentTime = 0;
+    showReproduccionEnfadado.style.display = "none";
     soundMiedoso.pause();
     soundMiedoso.currentTime = 0;
-    showReproduccionFeliz.style.display = "none";
-    showReproduccionTriste.style.display = "none";
-    showReproduccionEnfadado.style.display = "none";
-    showReproduccionMiedoso = "none";
+    showReproduccionMiedoso.style.display = "none";
 }
 
 emojiOnFeliz.onclick = function() {
@@ -65,10 +67,16 @@ emojiOnMiedoso.onclick = function(){
     if (soundMiedoso.paused) {
         stopAllSounds();
         soundMiedoso.play();
-        showReproduccionMiedoso = "block";
+        showReproduccionMiedoso.style.display = "block";
     } else {
         soundMiedoso.pause();
-        showReproduccionMiedoso = "none";
+        showReproduccionMiedoso.style.display = "none";
+    }
+}
+
+for (let i = 0; i < iconsStop.length; i++) {
+    iconsStop[i].onclick = function() {
+        stopAllSounds();
     }
 }
 
