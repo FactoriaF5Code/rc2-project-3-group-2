@@ -202,6 +202,7 @@ button {
 #iconMusicOnEnfadado,
 #iconMusicOnMiedoso {
     left: 12vh;
+    display:none;
 }
 
 .iconStop {
