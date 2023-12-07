@@ -227,15 +227,25 @@ footer .textoFooter {
 .tooltip .tooltiptext {
     font-size: 2vh;
     visibility: hidden;
-    width: 120px;
+    width: 220px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 10px;
-    font-family: var(--var-fontfamily);
+    padding: 5px ;
+
+    /* Position the tooltip */
+    
+    position: absolute;
+    z-index: -1; 
+    bottom: 100%;
+    margin-left: -110px
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.key{
+    color: var(--main-fontcolor2);
 }
