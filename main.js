@@ -80,3 +80,54 @@ for (let i = 0; i < iconsStop.length; i++) {
     }
 }
 
+document.onkeydown = function(e) {
+    switch (e.key) {
+        case '1':
+            if (soundFeliz.paused) {
+                stopAllSounds();
+                soundFeliz.play();
+                showReproduccionFeliz.style.display = "block";
+            } else {
+                soundFeliz.pause();
+                soundFeliz.currentTime = 0;
+                showReproduccionFeliz.style.display = "none";
+            }
+            break;
+        case '2':
+            if (soundTriste.paused) {
+                stopAllSounds();
+                soundTriste.play();
+                showReproduccionTriste.style.display = "block";
+            } else {
+                soundTriste.pause();
+                soundTriste.currentTime = 0;
+                showReproduccionTriste.style.display = "none";
+            }
+            break;
+        case '3':
+            if (soundEnfadado.paused) {
+                stopAllSounds();
+                soundEnfadado.play();
+                showReproduccionEnfadado.style.display = "block";
+            } else {
+                soundEnfadado.pause();
+                soundEnfadado.currentTime = 0;
+                showReproduccionEnfadado.style.display = "none";
+            }
+            break;
+        case '4':
+            if (soundMiedoso.paused) {
+                stopAllSounds();
+                soundMiedoso.play();
+                showReproduccionMiedoso.style.display = "block";
+            } else {
+                soundMiedoso.pause();
+                soundMiedoso.currentTime = 0;
+                showReproduccionMiedoso.style.display = "none";
+            }
+            break;
+        default:
+            break;
+    }
+}
+
