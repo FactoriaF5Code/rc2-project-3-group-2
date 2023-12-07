@@ -21,29 +21,147 @@ body {
     height: 100vh;
     width:100%;
     font-family: var(--var-fontfamily);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
-.logotipo {
-    display: auto;
-    margin: auto;
-    width: 50%;
+
+header .logoHead{
+    text-align: center;
+}
+
+header .logotipo {
+    width: 30vh;
+    padding: 3vh;
 }
 
 h1 {
     text-align: center;
-    margin-top:5vh;
-    color: #000;
+    color: var(--main-fontcolor1);
     text-align: center;
-    font-family: Nunito;
-    font-size: 12vh;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    
+    font-family: var(--var-fontfamily);
+    font-size: 10vh;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+    font-weight: bolder;    
 }
 
-span{
-    color: #00AADA;
+h1 span {
+    color: var(--main-fontcolor2);
+}
+
+p {
+    color: var(--main-fontcolor1);
+    text-align: center;
+    font-family: var(--var-fontfamily);
+    font-size: 3vh;
+    font-weight: 500;  
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:1vh 10vh;
+    padding-bottom: 6vh;
+}
+
+button {
+    width: 40vh;
+    height: 40vh;
+}
+
+#feliz {
+    background-image: url(/imgs/emojis-feliz.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#feliz:hover{
+    background-image: url(/imgs/emojis-clic-feliz.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#triste {
+    background-image: url(/imgs/emojis-triste.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#triste:hover {
+    background-image: url(/imgs/emojis-clic-triste.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#enfadado {
+    background-image: url(/imgs/emojis-enfadado.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#enfadado:hover {
+    background-image: url(/imgs/emojis-clic-enfadado.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#miedoso {
+    background-image: url(/imgs/emojis-miedoso.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+#miedoso:hover {
+    background-image: url(/imgs/emojis-clic-miedoso.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 40vh;
+}
+
+.iconoPlayOn{
+    text-align: center;
+}
+
+.iconoAudio{
+    width: 4vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+footer .textoFooter {
+    font-size: 2vh;
 }

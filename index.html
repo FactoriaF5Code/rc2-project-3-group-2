@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>emoStream.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <header>
-        <a href="index.html"><img src="/imgs/logo-emostreamV2.png" alt="logo" class="logotipo"></a>
-
+        <div class="logoHead">
+            <a href="index.html"><img src="/imgs/logo-emostreamV2.png" alt="logo" class="logotipo"></a>
+        </div>
     </header>
     <main>
-        <h1>¿Cómo,<span>te sientes</span>  hoy?</h1>
-
+        <h1>¿Cómo <span>te sientes</span> hoy?</h1>
+        <p>Haz clic en el emoji y escucha.</p>
+        <section>
+            <article>
+                <button id="feliz">                    
+                </button>
+                <div class="iconoPlayOn"><img src="/imgs/music-solid.svg" alt="icono música" class="iconoAudio"></div>
+            </article>
+            <article>
+                <button id="triste">
+                </button>
+            </article>
+            <article>
+                <button id="enfadado">
+                </button>
+            </article>
+            <article>
+                <button id="miedoso">
+                </button>
+            </article>
+        </section>
     </main>
+    <footer>
+        <p class="textoFooter">Una guía de sonidos y emociones creada por Enol G., Karén B., Sandra P. y Sandra R. :)</p>
+    </footer>
+    <audio id="soundFeliz" src="/audios/birds.mp3" autostart="false"></audio>
+    <audio id="soundTriste" src="/audios/piano.mp3" autostart="false"></audio>
+    <audio id="soundEnfadado" src="/audios/birds.mp3" autostart="false"></audio>
+    <audio id="soundMiedoso" src="/audios/piano.mp3" autostart="false"></audio>
 </body>
-</html>  
+
+</html>
