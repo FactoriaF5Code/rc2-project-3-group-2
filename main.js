@@ -3,22 +3,54 @@ let emojiOnTriste = document.getElementById("triste");
 let emojiOnEnfadado = document.getElementById("enfadado");
 let emojiOnMiedoso = document.getElementById("miedoso");
 
+let soundFeliz = document.getElementById("soundFeliz");
+let soundTriste = document.getElementById("soundTriste");
+let soundEnfadado = document.getElementById("soundEnfadado");
+let soundMiedoso = document.getElementById("soundMiedoso");
+
+function stopAllSounds() {
+    soundFeliz.pause();
+    soundFeliz.currentTime = 0;
+    soundTriste.pause();
+    soundTriste.currentTime = 0;
+    soundEnfadado.pause();
+    soundEnfadado.currentTime = 0;
+    soundMiedoso.pause();
+    soundMiedoso.currentTime = 0;
+}
+
 emojiOnFeliz.onclick = function() {
-    let soundFeliz = document.getElementById("soundFeliz");
-    soundFeliz.play();
+    if (soundFeliz.paused) {
+        stopAllSounds();
+        soundFeliz.play();
+    } else {
+        soundFeliz.pause();
+    }
 }
 
 emojiOnTriste.onclick = function() {
-    let soundTriste = document.getElementById("soundTriste");
-    soundTriste.play();
+    if (soundTriste.paused) {
+        stopAllSounds();
+        soundTriste.play();
+    } else {
+        soundTriste.pause();
+    }
 }
 
 emojiOnEnfadado.onclick = function() {
-    let soundEnfadado = document.getElementById("soundEnfadado");
-    soundEnfadado.play();
+    if (soundEnfadado.paused) {
+        stopAllSounds();
+        soundEnfadado.play();
+    } else {
+        soundEnfadado.pause();
+    }
 }
 
 emojiOnMiedoso.onclick = function(){
-    let soundMiedoso = document.getElementById("soundMiedoso");
-    soundMiedoso.play();
+    if (soundMiedoso.paused) {
+        stopAllSounds();
+        soundMiedoso.play();
+    } else {
+        soundMiedoso.pause();
+    }
 }
