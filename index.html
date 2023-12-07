@@ -20,21 +20,29 @@
     </header>
     <main>
         <h1>¿Cómo <span>te sientes</span> hoy?</h1>
-        <p>Haz clic en el emoji y escucha.</p>
+        <p class="descripcion">Haz clic en el emoji o utiliza el teclado para escuchar la música.</p>
         <section>
             <article>
-                <button id="feliz">                    
+                <div class="indicaciones">
+                    <p class="textoIndicaciones">Haz clic o pulsa</p>
+                    <p class="tecla">A</p>
+                </div>
+                <button id="feliz">
                 </button>
-                    <div class="circle" id="iconMusicOnFeliz">
-                        <img class="iconMusic" src="/imgs/music-solid.svg" alt="icono música">
-                        <img src="/imgs/stop.png" alt="icono stop" class="iconStop">
-                    </div>
-                    <div >
-                        
-                    </div>
+                <div class="circle" id="iconMusicOnFeliz">
+                    <img class="iconMusic" src="/imgs/music-solid.svg" alt="icono música">
+                    <img src="/imgs/stop.png" alt="icono stop" class="iconStop">
+                </div>
+                <div>
+
+                </div>
                 </div>
             </article>
             <article>
+                <div class="indicaciones">
+                    <p class="textoIndicaciones">Haz clic o pulsa</p>
+                    <p class="tecla">T</p>
+                </div>
                 <button id="triste">
                 </button>
                 <div class="circle" id="iconMusicOnTriste">
@@ -43,6 +51,10 @@
                 </div>
             </article>
             <article>
+                <div class="indicaciones">
+                    <p class="textoIndicaciones">Haz clic o pulsa</p>
+                    <p class="tecla">E</p>
+                </div>
                 <button id="enfadado">
                 </button>
                 <div class="circle" id="iconMusicOnEnfadado">
@@ -51,6 +63,10 @@
                 </div>
             </article>
             <article>
+                <div class="indicaciones">
+                    <p class="textoIndicaciones">Haz clic o pulsa</p>
+                    <p class="tecla">M</p>
+                </div>
                 <button id="miedoso">
                 </button>
                 <div class="circle" id="iconMusicOnMiedoso">
@@ -61,7 +77,8 @@
         </section>
     </main>
     <footer>
-        <p class="textoFooter">Una guía de sonidos y emociones creada por Enol G., Karén B., Sandra P. y Sandra R. :)</p>
+        <p class="textoFooter">Una guía de sonidos y emociones creada por Enol G., Karén B., Sandra P. y Sandra R. :)
+        </p>
     </footer>
     <audio id="soundFeliz" src="/audios/alegria.mp3" autostart="false"></audio>
     <audio id="soundTriste" src="/audios/tristeza.mp3" autostart="false"></audio>
