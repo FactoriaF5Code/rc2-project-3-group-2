@@ -89,28 +89,8 @@ button {
     height: 40vh;
 }
 
-#feliz:hover {
-    background-image: url(/imgs/emojis-clic-feliz.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
-}
-
 #triste {
     background-image: url(/imgs/emojis-triste.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
-}
-
-#triste:hover {
-    background-image: url(/imgs/emojis-clic-triste.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -129,28 +109,8 @@ button {
     height: 40vh;
 }
 
-#enfadado:hover {
-    background-image: url(/imgs/emojis-clic-enfadado.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
-}
-
 #miedoso {
     background-image: url(/imgs/emojis-miedoso.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
-}
-
-#miedoso:hover {
-    background-image: url(/imgs/emojis-clic-miedoso.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
