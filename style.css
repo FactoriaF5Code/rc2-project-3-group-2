@@ -79,6 +79,10 @@ button {
     height: 40vh;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #feliz {
     background-image: url(/imgs/emojis-feliz.png);
     background-color: transparent;
