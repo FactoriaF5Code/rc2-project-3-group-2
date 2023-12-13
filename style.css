@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
     border: none;
-    outline: none;
+    /*outline: 1px solid red;*/
 }
 
 :root {
@@ -12,6 +12,11 @@
     --main-fontcolor1: #1d1d1d;
     --main-fontcolor2: #00AADA;
     --var-fontfamily: 'Nunito', sans-serif;
+    --secondary-yellow: #FFDF40;
+    --secondary-green: #85D3CA;
+    --secondary-red: #FF6464;
+    --secondary-purple: #B5A5FF;
+    --secondary-orange: #FF5500;
 }
 
 body {
@@ -42,7 +47,6 @@ header .logotipo {
 
 .descripcion p{
     color: var(--main-fontcolor1);
-    text-align: center;
     font-family: var(--var-fontfamily);
     font-size: 3vh;
     font-weight: 500;
@@ -54,23 +58,21 @@ header .logotipo {
 h1 {
     text-align: center;
     color: var(--main-fontcolor1);
-    text-align: center;
     font-family: var(--var-fontfamily);
     font-size: 10vh;
     margin-top: 3vh;
-    margin-bottom: 8vh;
-    font-weight: bolder;
+    margin-bottom: 5vh;
+    font-weight: 800;
 }
 
 h1 span {
     color: var(--main-fontcolor2);
 }
 
-section {
+.emociones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 1vh 10vh;
-    padding-bottom: 6vh;
 }
 
 
@@ -184,16 +186,6 @@ button:hover {
     bottom: 0.01vh
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    vertical-align: bottom;
-}
-
-footer .textoFooter {
-    font-size: 1.6vh;
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -207,10 +199,7 @@ footer .textoFooter {
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px ;
-
-    /* Position the tooltip */
-    
+    padding: 5px ;    
     position: absolute;
     z-index: -1; 
     bottom: 100%;
@@ -224,3 +213,268 @@ footer .textoFooter {
 .key{
     color: var(--main-fontcolor2);
 }
+
+.explorar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.exploraDescripcion {
+    color: var(--main-fontcolor1);
+    text-align: center;
+    font-family: var(--var-fontfamily);
+    font-size: 3vh;
+    font-weight: 500;
+    margin:2vh;
+}
+
+.explorarEmociones{
+    margin: auto;
+    background-color: var(--main-fontcolor2);
+    width: 85%;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;   
+}
+
+.flechasTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonsExplorarEmociones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flechasBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:-3px;
+}
+
+#flechaYellow, #flechaGreen, #flechaRed, #flechaPurple{
+    opacity: 0;
+}
+
+#botonAlegria{
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    text-align: center;
+    width: 260px;
+    height: 260px;
+    background-color: var(--secondary-yellow);
+    border-radius: 50%;
+}
+
+#botonAlegria:hover{
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    text-align: center;
+    width: 260px;
+    height: 260px;
+    background-color: var(--secondary-yellow);
+    border-radius: 50%;
+}
+
+#botonAlegria:hover{
+    background-color: transparent;
+    border:8px solid var(--secondary-yellow);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonAlegria:active{
+    background-color: transparent;
+    border:8px solid var(--secondary-yellow);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonTristeza{
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    text-align: center;
+    width: 260px;
+    height: 260px;
+    background-color: var(--secondary-green);
+    border-radius: 50%;
+}
+
+#botonTristeza:hover{
+    background-color: transparent;
+    border:8px solid var(--secondary-green);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonAlegria:active{
+    background-color: transparent;
+    border:8px solid var(--secondary-green);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonEnfado{
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    text-align: center;
+    width: 260px;
+    height: 260px;
+    background-color: var(--secondary-red);
+    border-radius: 50%;
+}
+
+#botonEnfado:hover{
+    background-color: transparent;
+    border:8px solid var(--secondary-red);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonEnfado:active{
+    background-color: transparent;
+    border:8px solid var(--secondary-red);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonMiedo{
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    text-align: center;
+    width: 260px;
+    height: 260px;
+    background-color: var(--secondary-purple);
+    border-radius: 50%;
+}
+
+#botonMiedo:hover{
+    background-color: transparent;
+    border:8px solid var(--secondary-purple);
+    border-radius: 50%;
+    color:white;
+}
+
+#botonMiedo:active{
+    background-color: transparent;
+    border:8px solid var(--secondary-purple);
+    border-radius: 50%;
+    color:white;
+}
+
+#contentAlegria{
+    width:85%;
+    display: none;
+    overflow: hidden;  
+}
+
+.contentAlegriaText{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0vh;
+}
+
+.contentAlegriaText h2{
+    width: 20%;
+    font-family: var(--var-fontfamily);
+    font-size:4vh;
+    font-weight: 800;
+    background-image: url(/imgs/capa-amarillo.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right:10vh;
+}
+
+.contentAlegriaText p{
+    width: 75%;
+    font-family: var(--var-fontfamily);
+    font-size: 2vh;
+    margin-top: 10px;
+}
+
+.sectionPuzzleMusical{
+    width: 90%;
+}
+
+.titlePuzzleMusical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlePuzzleMusical img{
+    margin-right:3vh;
+}
+
+.titlePuzzleMusical h3 {
+    font-family: var(--var-fontfamily);
+    font-weight: 800;
+    font-size: 4vh;
+    color: var(--main-fontcolor2);
+    text-align: center;
+}
+
+.sectionPuzzleMusical p{
+    color: var(--main-fontcolor1);
+    text-align: center;
+    font-family: var(--var-fontfamily);
+    font-size: 3vh;
+    font-weight: 500;
+    margin:2vh;
+}
+
+.yellow {
+    background-color: var(--secondary-yellow);
+    width: 100%;
+    height: 34vh;
+}
+
+.listenMelody{
+    display: flex;
+    justify-content: center;
+    margin:5vh 0vh;
+}
+
+.listenMelody p{
+    font-family: var(--var-fontfamily);
+    color:var(--secondary-orange);
+    font-size: 2.5vh;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.listenMelody img{
+    width: 80px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    padding: 5vh;
+}
+
+footer .textoFooter {
+    font-size: 1.6vh;
+}
+
