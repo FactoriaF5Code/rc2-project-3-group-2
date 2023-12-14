@@ -97,29 +97,56 @@ puzzle.addEventListener("drop", e => {
 //PARA QUE SUENE CADA PIEZA DE LA PARTITURA
 // Obtener el elemento con la clase ".pieza" que tenga la imagen "imagen-0.jpg"
 const piezaImagen0 = document.querySelector(".pieza#imagen-0");
+let sonidoActivo;
 // Agregar un evento de doble clic solo a la imagen "imagen-0.jpg"
-piezaImagen0.addEventListener("dblclick", () => {
+piezaImagen0.addEventListener("mousedown", () => {
   // Obtener el elemento de audio con el ID "corteAlegria1"
   const corteAlegria1 = document.getElementById("corteAlegria1");
   // Reproducir el audio
   corteAlegria1.play();
 });
 
+// Parar el audio
+piezaImagen0.addEventListener("mouseup", () => {   
+    corteAlegria1.pause();
+    corteAlegria1.currentTime = 0;
+});
 
 const piezaImagen1 = document.querySelector(".pieza#imagen-1");
-piezaImagen1.addEventListener("dblclick", () => {
+piezaImagen1.addEventListener("mousedown", () => {
   const corteAlegria2 = document.getElementById("corteAlegria2");
+  sonidoActivo = corteAlegria2;
   corteAlegria2.play();
 });
 
+// Parar el audio
+piezaImagen1.addEventListener("mouseup", () => {   
+    corteAlegria2.pause();
+    corteAlegria2.currentTime = 0;
+});
+
 const piezaImagen2 = document.querySelector(".pieza#imagen-2");
-piezaImagen2.addEventListener("dblclick", () => {
+piezaImagen2.addEventListener("mousedown", () => {
   const corteAlegria3 = document.getElementById("corteAlegria3");
+  sonidoActivo = corteAlegria3;
   corteAlegria3.play();
 });
 
+// Parar el audio
+piezaImagen2.addEventListener("mouseup", () => {   
+    corteAlegria3.pause();
+    corteAlegria3.currentTime = 0;
+});
+
 const piezaImagen3 = document.querySelector(".pieza#imagen-3");
-piezaImagen3.addEventListener("dblclick", () => {
+piezaImagen3.addEventListener("mousedown", () => {
   const corteAlegria4 = document.getElementById("corteAlegria4");
+  sonidoActivo = corteAlegria4;
   corteAlegria4.play();
+});
+
+// Parar el audio
+piezaImagen3.addEventListener("mouseup", () => {   
+    corteAlegria4.pause();
+    corteAlegria4.currentTime = 0;
 });
