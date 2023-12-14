@@ -7,6 +7,10 @@
     /*outline: 1px solid red;*/
 }
 
+html {
+    font-size: 16px;
+}
+
 :root {
     --main-bgcolormain: #FFEFDA;
     --main-fontcolor1: #1d1d1d;
@@ -24,44 +28,49 @@ body {
     height: 100vh;
     width: 100%;
     font-family: var(--var-fontfamily);
-    display: block;
+    display:block;
+    margin:auto;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6vh;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
-
 
 header .logotipo {
-    width: 30vh;
-    padding: 3vh;
-    margin-right: 5vh;
+    width: 18rem;
+    padding: 2rem;
+    margin-right: 3rem;
 }
 
-.descripcion{
-    width: 60vh;
+.descripcion {
+    width: 36rem;
 }
 
-.descripcion p{
+.descripcion p {
     color: var(--main-fontcolor1);
     font-family: var(--var-fontfamily);
-    font-size: 3vh;
+    font-size: 1.8rem;
     font-weight: 500;
     text-align: left;
-    margin-top:2vh;
+    margin-top: 0.7rem;
 }
 
+main {
+    display: block;
+    margin: auto;
+}
 
 h1 {
     text-align: center;
     color: var(--main-fontcolor1);
     font-family: var(--var-fontfamily);
-    font-size: 10vh;
-    margin-top: 3vh;
-    margin-bottom: 5vh;
+    font-size: 6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
     font-weight: 800;
 }
 
@@ -69,16 +78,15 @@ h1 span {
     color: var(--main-fontcolor2);
 }
 
-.emociones{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 1vh 10vh;
+section.emociones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-
 button {
-    width: 40vh;
-    height: 40vh;
+    width: 26rem;
+    height: 26rem;
 }
 
 button:hover {
@@ -91,8 +99,8 @@ button:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
+    width: 26rem;
+    margin-bottom: 80px;
 }
 
 #triste {
@@ -101,8 +109,8 @@ button:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
+    width: 26rem;
+    margin-bottom: 80px;
 }
 
 #enfadado {
@@ -111,8 +119,8 @@ button:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
+    width: 26rem;
+    margin-bottom: 80px;
 }
 
 #miedoso {
@@ -121,8 +129,8 @@ button:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 40vh;
+    width: 26rem;
+    margin-bottom: 80px;
 }
 
 .circle {
@@ -176,7 +184,7 @@ button:hover {
 #iconMusicOnTriste,
 #iconMusicOnEnfadado,
 #iconMusicOnMiedoso {
-    left: 12vh;
+    left: 8.5rem;
     display: none;
 }
 
@@ -199,9 +207,9 @@ button:hover {
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px ;    
+    padding: 5px;
     position: absolute;
-    z-index: -1; 
+    z-index: -1;
     bottom: 100%;
     margin-left: -110px
 }
@@ -210,7 +218,7 @@ button:hover {
     visibility: visible;
 }
 
-.key{
+.key {
     color: var(--main-fontcolor2);
 }
 
@@ -225,12 +233,12 @@ button:hover {
     color: var(--main-fontcolor1);
     text-align: center;
     font-family: var(--var-fontfamily);
-    font-size: 3vh;
+    font-size: 1.8rem;
     font-weight: 500;
-    margin:2vh;
+    margin: 1.8rem;
 }
 
-.explorarEmociones{
+.explorarEmociones {
     margin: auto;
     background-color: var(--main-fontcolor2);
     width: 85%;
@@ -240,10 +248,10 @@ button:hover {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 0;   
+    padding: 0;
 }
 
-.flechasTop{
+.flechasTop {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -256,18 +264,21 @@ button:hover {
     align-items: center;
 }
 
-.flechasBottom{
+.flechasBottom {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top:-3px;
+    margin-top: -3px;
 }
 
-#flechaYellow, #flechaGreen, #flechaRed, #flechaPurple{
+#flechaYellow,
+#flechaGreen,
+#flechaRed,
+#flechaPurple {
     opacity: 0;
 }
 
-#botonAlegria{
+#botonAlegria {
     font-family: var(--var-fontfamily);
     font-weight: 800;
     font-size: 4vh;
@@ -278,7 +289,7 @@ button:hover {
     border-radius: 50%;
 }
 
-#botonAlegria:hover{
+#botonAlegria:hover {
     font-family: var(--var-fontfamily);
     font-weight: 800;
     font-size: 4vh;
@@ -289,21 +300,21 @@ button:hover {
     border-radius: 50%;
 }
 
-#botonAlegria:hover{
+#botonAlegria:hover {
     background-color: transparent;
-    border:8px solid var(--secondary-yellow);
+    border: 8px solid var(--secondary-yellow);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonAlegria:active{
+#botonAlegria:active {
     background-color: transparent;
-    border:8px solid var(--secondary-yellow);
+    border: 8px solid var(--secondary-yellow);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonTristeza{
+#botonTristeza {
     font-family: var(--var-fontfamily);
     font-weight: 800;
     font-size: 4vh;
@@ -314,21 +325,21 @@ button:hover {
     border-radius: 50%;
 }
 
-#botonTristeza:hover{
+#botonTristeza:hover {
     background-color: transparent;
-    border:8px solid var(--secondary-green);
+    border: 8px solid var(--secondary-green);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonAlegria:active{
+#botonAlegria:active {
     background-color: transparent;
-    border:8px solid var(--secondary-green);
+    border: 8px solid var(--secondary-green);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonEnfado{
+#botonEnfado {
     font-family: var(--var-fontfamily);
     font-weight: 800;
     font-size: 4vh;
@@ -339,21 +350,21 @@ button:hover {
     border-radius: 50%;
 }
 
-#botonEnfado:hover{
+#botonEnfado:hover {
     background-color: transparent;
-    border:8px solid var(--secondary-red);
+    border: 8px solid var(--secondary-red);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonEnfado:active{
+#botonEnfado:active {
     background-color: transparent;
-    border:8px solid var(--secondary-red);
+    border: 8px solid var(--secondary-red);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonMiedo{
+#botonMiedo {
     font-family: var(--var-fontfamily);
     font-weight: 800;
     font-size: 4vh;
@@ -364,27 +375,27 @@ button:hover {
     border-radius: 50%;
 }
 
-#botonMiedo:hover{
+#botonMiedo:hover {
     background-color: transparent;
-    border:8px solid var(--secondary-purple);
+    border: 8px solid var(--secondary-purple);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#botonMiedo:active{
+#botonMiedo:active {
     background-color: transparent;
-    border:8px solid var(--secondary-purple);
+    border: 8px solid var(--secondary-purple);
     border-radius: 50%;
-    color:white;
+    color: white;
 }
 
-#contentAlegria{
-    width:85%;
+#contentAlegria {
+    width: 85%;
     display: none;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
-.contentAlegriaText{
+.contentAlegriaText {
     margin: auto;
     width: 90%;
     display: flex;
@@ -392,37 +403,37 @@ button:hover {
     margin: 10vh 0vh;
 }
 
-.contentAlegriaText h2{
+.contentAlegriaText h2 {
     width: 20%;
     font-family: var(--var-fontfamily);
-    font-size:4vh;
+    font-size: 4vh;
     font-weight: 800;
     background-image: url(/imgs/capa-amarillo.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-right:10vh;
+    padding-right: 10vh;
 }
 
-.contentAlegriaText p{
+.contentAlegriaText p {
     width: 75%;
     font-family: var(--var-fontfamily);
     font-size: 2vh;
     margin-top: 10px;
 }
 
-.sectionPuzzleMusical{
+.sectionPuzzleMusical {
     width: 90%;
 }
 
-.titlePuzzleMusical{
+.titlePuzzleMusical {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.titlePuzzleMusical img{
-    margin-right:3vh;
+.titlePuzzleMusical img {
+    margin-right: 3vh;
 }
 
 .titlePuzzleMusical h3 {
@@ -433,13 +444,13 @@ button:hover {
     text-align: center;
 }
 
-.sectionPuzzleMusical p{
+.sectionPuzzleMusical p {
     color: var(--main-fontcolor1);
     text-align: center;
     font-family: var(--var-fontfamily);
     font-size: 3vh;
     font-weight: 500;
-    margin:2vh;
+    margin: 2vh;
 }
 
 #yellow {
@@ -451,11 +462,12 @@ button:hover {
 }
 
 
-.juegoMusical{
+.juegoMusical {
     margin-top: 50px;
     width: 1400px;
     height: 114px;
     background-image: url(/imgs/background-partitura.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-color: #95A1A9;
@@ -470,13 +482,12 @@ button:hover {
 }
 
 #puzzle {
-    /*border: 1px solid black;*/
     width: 1268px;
     height: 114px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom:20px;
-    margin-left:50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 #piezas {
@@ -498,7 +509,7 @@ button:hover {
 .placeholder {
     background-color: #95A1A9;
     outline: 1px solid #333;
-    margin:auto;
+    margin: auto;
     width: 317px;
     height: 70px;
     transition: 1s;
@@ -521,21 +532,21 @@ button:hover {
     display: none;
 }
 
-.listenMelody{
+.listenMelody {
     display: flex;
     justify-content: center;
-    margin:3vh 0vh;
+    margin: 3vh 0vh;
 }
 
-.listenMelody p{
+.listenMelody p {
     font-family: var(--var-fontfamily);
-    color:var(--secondary-orange);
+    color: var(--secondary-orange);
     font-size: 2.5vh;
     font-weight: 800;
     cursor: pointer;
 }
 
-.listenMelody img{
+.listenMelody img {
     width: 80px;
     cursor: pointer;
 }
