@@ -93,3 +93,33 @@ puzzle.addEventListener("drop", e => {
         }
     }
 });
+
+//PARA QUE SUENE CADA PIEZA DE LA PARTITURA
+// Obtener el elemento con la clase ".pieza" que tenga la imagen "imagen-0.jpg"
+const piezaImagen0 = document.querySelector(".pieza#imagen-0");
+// Agregar un evento de doble clic solo a la imagen "imagen-0.jpg"
+piezaImagen0.addEventListener("dblclick", () => {
+  // Obtener el elemento de audio con el ID "corteAlegria1"
+  const corteAlegria1 = document.getElementById("corteAlegria1");
+  // Reproducir el audio
+  corteAlegria1.play();
+});
+
+
+const piezaImagen1 = document.querySelector(".pieza#imagen-1");
+piezaImagen1.addEventListener("dblclick", () => {
+  const corteAlegria2 = document.getElementById("corteAlegria2");
+  corteAlegria2.play();
+});
+
+const piezaImagen2 = document.querySelector(".pieza#imagen-2");
+piezaImagen2.addEventListener("dblclick", () => {
+  const corteAlegria3 = document.getElementById("corteAlegria3");
+  corteAlegria3.play();
+});
+
+const piezaImagen3 = document.querySelector(".pieza#imagen-3");
+piezaImagen3.addEventListener("dblclick", () => {
+  const corteAlegria4 = document.getElementById("corteAlegria4");
+  corteAlegria4.play();
+});
