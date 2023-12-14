@@ -112,6 +112,11 @@ piezaImagen0.addEventListener("mouseup", () => {
     corteAlegria1.currentTime = 0;
 });
 
+piezaImagen0.addEventListener("dragend", () => {   
+    corteAlegria1.pause();
+    corteAlegria1.currentTime = 0;
+});
+
 const piezaImagen1 = document.querySelector(".pieza#imagen-1");
 piezaImagen1.addEventListener("mousedown", () => {
   const corteAlegria2 = document.getElementById("corteAlegria2");
@@ -121,6 +126,11 @@ piezaImagen1.addEventListener("mousedown", () => {
 
 // Parar el audio
 piezaImagen1.addEventListener("mouseup", () => {   
+    corteAlegria2.pause();
+    corteAlegria2.currentTime = 0;
+});
+
+piezaImagen1.addEventListener("dragend", () => {   
     corteAlegria2.pause();
     corteAlegria2.currentTime = 0;
 });
@@ -138,6 +148,11 @@ piezaImagen2.addEventListener("mouseup", () => {
     corteAlegria3.currentTime = 0;
 });
 
+piezaImagen2.addEventListener("dragend", () => {   
+    corteAlegria3.pause();
+    corteAlegria3.currentTime = 0;
+});
+
 const piezaImagen3 = document.querySelector(".pieza#imagen-3");
 piezaImagen3.addEventListener("mousedown", () => {
   const corteAlegria4 = document.getElementById("corteAlegria4");
@@ -147,6 +162,11 @@ piezaImagen3.addEventListener("mousedown", () => {
 
 // Parar el audio
 piezaImagen3.addEventListener("mouseup", () => {   
+    corteAlegria4.pause();
+    corteAlegria4.currentTime = 0;
+});
+
+piezaImagen3.addEventListener("dragend", () => {   
     corteAlegria4.pause();
     corteAlegria4.currentTime = 0;
 });
