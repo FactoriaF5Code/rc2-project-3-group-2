@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emoStream.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,600;1,700;1,900;1,1000&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="puzzle.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="imgs/logo-emostreamV2.png" alt="logo" class="logotipo"></a>
+        </div>
+        <div class="descripcion">
+            <p>Utiliza la música para expresar e identificar tus emociones.</p>
+        </div>
+    </header>
+    <main>
+        <h1>¿Cómo <span>te sientes</span> hoy?</h1>
+        <section class="emociones">
+            <article>
+                <button class="tooltip" id="feliz">    
+                    <span class="tooltiptext">Haz clic en el emoji o utiliza la tecla<span class="key"> 'A'</span></span>           
+                </button>
+
+                <div class="circle" id="iconMusicOnFeliz">
+                    <img class="iconMusic" src="imgs/music-solid.svg" alt="icono música">
+                    <img src="imgs/stop.png" alt="icono stop" class="iconStop">
+                </div>
+                <div>
+
+                </div>
+                </div>
+            </article>
+            <article>
+                <button class="tooltip" id="triste">
+                    <span class="tooltiptext">Haz clic en el emoji o utiliza la tecla<span class="key"> 'T'</span></span>           
+                </button>
+                <div class="circle" id="iconMusicOnTriste">
+                    <img class="iconMusic" src="imgs/music-solid.svg" alt="icono música">
+                    <img src="imgs/stop.png" alt="icono stop" class="iconStop">
+                </div>
+            </article>
+            <article>
+                <button class="tooltip" id="enfadado">
+                    <span class="tooltiptext">Haz clic en el emoji o utiliza la tecla<span class="key"> 'E'</span></span>           
+                </button>
+                <div class="circle" id="iconMusicOnEnfadado">
+                    <img class="iconMusic" src="imgs/music-solid.svg" alt="icono música">
+                    <img src="imgs/stop.png" alt="icono stop" class="iconStop">
+                </div>
+            </article>
+            <article>
+                <button class="tooltip" id="miedoso">
+                    <span class="tooltiptext">Haz clic en el emoji o utiliza la tecla<span class="key"> 'M'</span></span>           
+                </button>
+                <div class="circle" id="iconMusicOnMiedoso">
+                    <img class="iconMusic" src="imgs/music-solid.svg" alt="icono música">
+                    <img src="imgs/stop.png" alt="icono stop" class="iconStop">
+                </div>
+            </article>
+        </section>
+        <section class="explorar">
+            <p class="exploraDescripcion">Explora las diferentes emociones y aprende música con ellas.</p>
+            <div class="explorarEmociones">                
+                <div class="flechasTop">
+                    <a href="#botonAlegria"><img src="imgs/flecha.png" alt="icono flecha"></a>
+                    <a href="#botonAlegria"><img src="imgs/flecha.png" alt="icono flecha"></a>
+                    <a href="#botonAlegria"><img src="imgs/flecha.png" alt="icono flecha"></a>
+                    <a href="#botonAlegria"><img src="imgs/flecha.png" alt="icono flecha"></a>
+                </div>
+                <div class="buttonsExplorarEmociones">
+                    <a href="#botonAlegria"><button type="button" id="botonAlegria">Alegría</button></a>
+                    <button type="button" id="botonTristeza">Tristeza</button>
+                    <button type="button" id="botonEnfado">Enfado</button>
+                    <button type="button" id="botonMiedo">Miedo</button>
+                </div>
+                <div class="flechasBottom">
+                    <img src="imgs/flecha-amarilla.png" alt="icono flecha alegría" id="flechaYellow">
+                    <img src="imgs/flecha-verde.png" alt="icono flecha tristeza" id="flechaGreen">
+                    <img src="imgs/flecha-rojo.png" alt="icono flecha enfado" id="flechaRed">
+                    <img src="imgs/flecha-morada.png" alt="icono flecha miedo" id="flechaPurple">
+                </div>
+            </div>
+            <article id="contentAlegria">
+                <div class="contentAlegriaText">
+                    <h2>La alegría en la música</h2>
+                    <p>Para crear música que exprese alegría se usan sonidos especiales como los <span style="font-weight: bold;">acordes mayores,</span> que por su sonoridad clara y brillante evocan sentimientos positivos. <span style="font-weight: bold;">Los intervalos de quintas y octavas justas</span> suelen ser muy efectivos, creando una sensación de positividad. Los ritmos más alegres son los <span style="font-weight: bold;">patrones sincopados,</span> vivaces y animados, que añaden un elemento de sorpresa y diversión. <span style="font-weight: bold;";>Los tempos rápidos y las melodías ascendentes</span> también son comunes para transmitir felicidad, ya que proporcionan una sensación de energía y entusiasmo.</p>
+                </div>
+                <div class="sectionPuzzleMusical">
+                    <div class="titlePuzzleMusical">
+                        <img src="imgs/icon-puzzle.png" alt="icono pieza puzzle">
+                        <h3>Puzzle musical</h3>
+                    </div>
+                    <p>Encaja las piezas de la partitura y completa la melodía.<br/> Mantén la pieza pulsada para escucharla.</p>
+                    <div id="yellow">
+                        <section class="juegoMusical">
+                            <div class="container">
+                                <div id="puzzle"></div>
+                                <div id="piezas"></div>
+                            </div>
+                            <p id="mensaje">¡Genial!</p>
+                        </section>
+                    </div>
+                    <div class="listenMelody">
+                        <p>Escucha la melodía completa</p>
+                        <img src="imgs/play.png" alt="botón de play">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="textoFooter">Una guía de sonidos y emociones creada por Enol G., Karén B., Sandra P. y Sandra R. :)
+        </p>
+    </footer>
+    <audio id="soundFeliz" src="audios/alegria.mp3" autostart="false"></audio>
+    <audio id="soundTriste" src="audios/tristeza.mp3" autostart="false"></audio>
+    <audio id="soundEnfadado" src="audios/enfado.mp3" autostart="false"></audio>
+    <audio id="soundMiedoso" src="audios/miedo.mp3" autostart="false"></audio>
+    <audio id ="melodiaAlegria" src="audios/MelodiaAlegria.mp3" autostart="false"></audio>
+    <audio id ="corteAlegria1" src="audios/corte1.mp3" autostart="false"></audio>
+    <audio id ="corteAlegria2" src="audios/corte2.mp3" autostart="false"></audio>
+    <audio id ="corteAlegria3" src="audios/corte3.mp3" autostart="false"></audio>
+    <audio id ="corteAlegria4" src="audios/corte4.mp3" autostart="false"></audio>
+</body>
+
+</html>
