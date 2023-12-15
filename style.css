@@ -93,7 +93,7 @@ button:hover {
 }
 
 #feliz {
-    background-image: url(./imgs/emojis-feliz.png);
+    background-image: url(imgs/emojis-feliz.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -103,7 +103,7 @@ button:hover {
 }
 
 #triste {
-    background-image: url(./imgs/emojis-triste.png);
+    background-image: url(imgs/emojis-triste.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -113,7 +113,7 @@ button:hover {
 }
 
 #enfadado {
-    background-image: url(./imgs/emojis-enfadado.png);
+    background-image: url(imgs/emojis-enfadado.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -123,7 +123,7 @@ button:hover {
 }
 
 #miedoso {
-    background-image: url(./imgs/emojis-miedoso.png);
+    background-image: url(imgs/emojis-miedoso.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -407,7 +407,7 @@ button:hover {
     font-family: var(--var-fontfamily);
     font-size: 4vh;
     font-weight: 800;
-    background-image: url(./imgs/capa-amarillo.png);
+    background-image: url(imgs/capa-amarillo.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ button:hover {
     margin-top: 50px;
     width: 1400px;
     height: 114px;
-    background-image: url(./imgs/background-partitura.png);
+    background-image: url(imgs/background-partitura.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
