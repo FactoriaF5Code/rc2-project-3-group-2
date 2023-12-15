@@ -36,7 +36,7 @@ function resetAllImages() {
     emojiOnMiedoso.style.backgroundImage = "url('/imgs/emojis-miedoso.png')";
 }
 
-emojiOnFeliz.onclick = function() {
+emojiOnFeliz.onclick = function () {
     if (soundFeliz.paused) {
         stopAllSounds();
         resetAllImages();
@@ -50,11 +50,11 @@ emojiOnFeliz.onclick = function() {
     }
 }
 
-emojiOnFeliz.onmouseover = function() {
+emojiOnFeliz.onmouseover = function () {
     emojiOnFeliz.style.backgroundImage = "url('/imgs/emojis-clic-feliz.png')";
 }
 
-emojiOnFeliz.onmouseout = function() {
+emojiOnFeliz.onmouseout = function () {
     if (soundFeliz.paused) {
         emojiOnFeliz.style.backgroundImage = "url('/imgs/emojis-feliz.png')";
     } else {
@@ -62,7 +62,7 @@ emojiOnFeliz.onmouseout = function() {
     }
 }
 
-emojiOnTriste.onclick = function() {
+emojiOnTriste.onclick = function () {
     if (soundTriste.paused) {
         stopAllSounds();
         resetAllImages();
@@ -76,11 +76,11 @@ emojiOnTriste.onclick = function() {
     }
 }
 
-emojiOnTriste.onmouseover = function() {
+emojiOnTriste.onmouseover = function () {
     emojiOnTriste.style.backgroundImage = "url('/imgs/emojis-clic-triste.png')";
 }
 
-emojiOnTriste.onmouseout = function() {
+emojiOnTriste.onmouseout = function () {
     if (soundTriste.paused) {
         emojiOnTriste.style.backgroundImage = "url('/imgs/emojis-triste.png')";
     } else {
@@ -88,7 +88,7 @@ emojiOnTriste.onmouseout = function() {
     }
 }
 
-emojiOnEnfadado.onclick = function() {
+emojiOnEnfadado.onclick = function () {
     if (soundEnfadado.paused) {
         stopAllSounds();
         resetAllImages();
@@ -102,11 +102,11 @@ emojiOnEnfadado.onclick = function() {
     }
 }
 
-emojiOnEnfadado.onmouseover = function() {
+emojiOnEnfadado.onmouseover = function () {
     emojiOnEnfadado.style.backgroundImage = "url('/imgs/emojis-clic-enfadado.png')";
 }
 
-emojiOnEnfadado.onmouseout = function() {
+emojiOnEnfadado.onmouseout = function () {
     if (soundEnfadado.paused) {
         emojiOnEnfadado.style.backgroundImage = "url('/imgs/emojis-enfadado.png')";
     } else {
@@ -114,7 +114,7 @@ emojiOnEnfadado.onmouseout = function() {
     }
 }
 
-emojiOnMiedoso.onclick = function(){
+emojiOnMiedoso.onclick = function () {
     if (soundMiedoso.paused) {
         stopAllSounds();
         resetAllImages();
@@ -128,27 +128,27 @@ emojiOnMiedoso.onclick = function(){
     }
 }
 
-emojiOnMiedoso.onmouseover = function() {
+emojiOnMiedoso.onmouseover = function () {
     emojiOnMiedoso.style.backgroundImage = "url('/imgs/emojis-clic-miedoso.png')";
 }
 
-emojiOnMiedoso.onmouseout = function() {
+emojiOnMiedoso.onmouseout = function () {
     if (soundMiedoso.paused) {
         emojiOnMiedoso.style.backgroundImage = "url('/imgs/emojis-miedoso.png')";
-    }else{
+    } else {
         emojiOnMiedoso.style.backgroundImage = "url('/imgs/emojis-clic-miedoso.png')";
     }
 }
 
 
 for (let i = 0; i < iconsStop.length; i++) {
-    iconsStop[i].onclick = function() {
+    iconsStop[i].onclick = function () {
         stopAllSounds();
         resetAllImages();
     }
 }
 
-document.onkeydown = function(e) {
+document.onkeydown = function (e) {
     switch (e.key) {
         case 'A':
         case 'a':
@@ -217,57 +217,51 @@ document.onkeydown = function(e) {
 
 
 
-//Función para mostrar el contenido de Alegría
 const botonAlegria = document.getElementById("botonAlegria");
 const contentAlegria = document.getElementById("contentAlegria");
 
-// Agregamos un evento de clic al botón
-botonAlegria.addEventListener("click", function() {
-  // Verificamos si el contenido ya está visible o no
-  if (contentAlegria.style.display === "none" || contentAlegria.style.display === "") {
-    // Si no está visible, lo mostramos
-    contentAlegria.style.display = "flex";
-    contentAlegria.style.justifyContent = "center";
-    contentAlegria.style.alignItems = "center";
-    contentAlegria.style.flexDirection = "column"
-  } else {
-    // Si ya está visible, lo ocultamos
-    contentAlegria.style.display = "none";
-  }
+botonAlegria.addEventListener("click", function () {
+    if (contentAlegria.style.display === "none" || contentAlegria.style.display === "") {
+
+        contentAlegria.style.display = "flex";
+        contentAlegria.style.justifyContent = "center";
+        contentAlegria.style.alignItems = "center";
+        contentAlegria.style.flexDirection = "column"
+    } else {
+
+        contentAlegria.style.display = "none";
+    }
 });
 
 
-//Función para mostrar/ocultar las flechas
+
 let flechaYellowActive = document.getElementById("flechaYellow");
 let flechaGreenActive = document.getElementById("flechaGreen");
 let flechaRedActive = document.getElementById("flechaRed");
 let flechaPurpleActive = document.getElementById("flechaPurple");
 
-botonAlegria.addEventListener("click", function() {
-    // Verificamos si la opacidad es 0 o 100
+botonAlegria.addEventListener("click", function () {
     if (flechaYellowActive.style.opacity === "0" || flechaYellowActive.style.opacity === "") {
-      // Si es 0, lo subimos a 100
-      flechaYellowActive.style.opacity = "100";
+        flechaYellowActive.style.opacity = "100";
     } else {
-      // Si es 100, lo bajamos a 0
-      flechaYellowActive.style.opacity = "0";
+        flechaYellowActive.style.opacity = "0";
     }
-  });
+});
 
 
 
-// Función para reproducir la melodía alegría en midi
+
 const listenMelodyElement = document.querySelector(".listenMelody");
 const melodiaAlegriaAudio = document.getElementById("melodiaAlegria");
 
-// Agregamos un evento de clic al elemento "listenMelody"
-listenMelodyElement.addEventListener("click", function() {
-  // Verificamos si el audio ya está reproduciéndose o no
-  if (melodiaAlegriaAudio.paused) {
-    // Si está en pausa, lo reproducimos
-    melodiaAlegriaAudio.play();
-  } else {
-    // Si está reproduciéndose, lo pausamos
-    melodiaAlegriaAudio.pause();
-  }
+
+listenMelodyElement.addEventListener("click", function () {
+
+    if (melodiaAlegriaAudio.paused) {
+
+        melodiaAlegriaAudio.play();
+    } else {
+
+        melodiaAlegriaAudio.pause();
+    }
 });
