@@ -43,6 +43,14 @@ for (let i = 0; i < terminado; i++) {
     puzzle.appendChild(div);
 }
 
+
+piezas.addEventListener(
+    "mouseover",
+    (event) => {
+        // cambiar estilo del raton de flecha a mano 
+        event.target.style.cursor = "pointer";
+})
+
 //DRAG AND DROP
 piezas.addEventListener('dragstart', e => {
     //con setData transferimos información: el data id que creamos anteriormente para cada ipieza
